@@ -1,0 +1,66 @@
+.card{
+    width: 100%;
+    max-width: 300px;
+    padding: 1.5em 1.5em;
+    border-radius: 0.5em;
+    border: 1px solid #aaa7;
+    transition: transform 200ms ease;
+    background-color: #cac5c5;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card__title{
+    margin-bottom: 0.5em;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.card__body{
+    display: grid;
+    gap: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+.card__item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.card__span{
+    text-transform: uppercase;
+    color: #5a5858;
+    font-size: 0.8rem;
+    position: relative;
+    left: 0.8em;
+}
+
+.card__footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5em;
+}
+.card__btn{
+    width: 1.8em;
+    aspect-ratio: 1;
+    padding: 0.4em;
+    font-size: 1.1em;
+    border-radius: 0.2em;
+}
+
+.card__btn--trash{
+    color: white;
+    background-color: #D85D5D;
+}
+.card__btn--edit{
+    color: #706e6e;
+    border: 1px solid currentColor;
+}
+
+.card__btn:hover{
+    box-shadow: 0 0 0.4em #0004;
+    transition: box-shadow 100ms ease;
+}
